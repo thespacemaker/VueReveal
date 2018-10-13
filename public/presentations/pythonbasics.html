@@ -1,0 +1,436 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Python Basics</title>
+
+		<link rel="stylesheet" href="../reveal.js/css/reveal.css">
+		<link rel="stylesheet" href="../reveal.js/css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../reveal.js/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal.js/css/print/pdf.css' : '../reveal.js/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<img width="400" height="250" data-src="https://www.technotification.com/wp-content/uploads/2017/05/Python-programming-for-hackers-compressed.jpg" alt="Down arrow">
+					<h3>Python Basics</h3>
+					<p>
+						<small>by Adnan E. Chahbandar</small>
+					</p>
+				</section>
+				<section>
+					<section>
+						<h2>About this course</h2>
+						<ul>
+							<li>Introduction to the Python language</li>
+							<li>Covers basic variables, functions, and loops</li>
+							<li>Getting your feet wet with code</li>
+						</ul>
+					</section>
+					<section>
+						<img width="1000" height="238" data-src="../media/pano.jpg" alt="Down arrow">
+						<h2>About me</h2>
+						<p>Technologist - Traveler - Lover of Life</p>
+						<p>Full-Stack Web Developer</p>
+						<p>Maker since 2012</p>
+					</section>
+					<section data-background-video="test.mp4" data-background-color="#000000">
+						<div style="background-color: rgba(0, 0, 0, 0.3); color: #fff;">
+							<h2>AST Makerspace</h2>
+						</div>
+					</section>
+				</section>
+				<section>
+					<h2>CODING IS IMPORTANT</h2>
+					<p>Think like a programmer</p>
+				</section>
+				<section>
+					<section data-background="https://static.makeuseof.com/wp-content/uploads/2018/03/python-faq-670x335.jpg" data-background-color="#000000">
+						<div style="background-color: rgba(0, 0, 0, 0.3); color: #fff;">
+						<h2>Why Python?</h2>
+					</div>
+					</section>
+					<section>
+						<h2>General Purpose Language</h2>
+						<table>
+							<tbody>
+								<tr>
+									<td>Web Development</td>
+									<td>Scientific Applications</td>
+								</tr>
+								<tr>
+									<td>Numeric and Mathematic</td>
+									<td>Computer Vision</td>
+								</tr>
+								<tr>
+									<td>Neural Networks</td>
+									<td>Hobbyist Applications</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section data-background="http://makemeanalyst.com/wp-content/uploads/2017/09/Python-libraries-for-data-analysis.png">
+						<div style="background-color: rgba(0, 0, 0, 0.3); color: #fff;">
+						<h2>Libraries</h2>
+					</div>
+					</section>
+					<section data-background-video="challenge.mp4">
+						<div style="background-color: rgba(0, 0, 0, 0.3); color: #fff;">
+						<h2>Complex tasks</h2>
+					</div>
+				</section>
+					<section data-background="http://adilmoujahid.com/images/data-viz-talkingdata.gif">
+						<div style="background-color: rgba(0, 0, 0, 0.3); color: #fff;">
+						<h2>Data Applications</h2>
+					</div>
+					</section>
+					<section data-background="http://simplecore-dev.intel.com/ai/wp-content/uploads/sites/71/porch-pirate.gif">
+						<div style="background-color: rgba(0, 0, 0, 0.3); color: #fff;">
+						<h2>Data Applications</h2>
+					</div>
+					</section>
+					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
+						<h2>It's Open-Source</h2>
+					</section>
+				</section>
+				<section>
+					<section data-background-iframe="https://github.com/hakimel/reveal.js">
+						<h2>Getting Started</h2>
+						<p><a href="https://www.python.org">https://www.python.org</a></p>
+					</section>
+					<section data-background="https://www.howtoforge.com/images/how-to-record-your-terminal-session-on-linux/example.gif">
+						<h2>The Console</h2>
+					</section>
+					<section>
+						<h2>Math</h2>
+						<p>
+							Yes... python can do math
+						</p>
+					</section>
+					<section>
+						<h2>Math Operators</h2>
+						<pre><code class="python" data-trim contenteditable>
+							x + y 	# Sum of x and y
+							x - y   # Difference of x and y
+							-x    	# Changed sign of x
+							x * y 	# Product of x and y
+							x / y  	# Quotient of x and y
+							x // y 	# Quotient from floor division of x and y
+							x % y 	# Remainder of x / y
+							x ** y	# x to the y power
+						</code></pre>
+					</section>
+					<section>
+						<h2>Good Job</h2>
+						<p>
+							You too can now do Python Math
+						</p>
+					</section>
+				</section>
+				<Section>
+					<section>
+						<h2>Now... <br /> Some heavy lifting</h2>
+					</Section>
+					<section>
+						<h2>Variables</h2>
+						<pre><code class="python" data-trim contenteditable>
+							counter = 100          # An integer assignment
+							miles   = 1000.0       # A floating point
+							name    = "John"       # A string
+						</code></pre>
+						<p><small>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</small></p>
+					</section>
+					<section>
+						<h2>Input and Output Data</h2>
+						<pre><code class="python" data-trim contenteditable>
+							person = input('Enter your name: ') # Asking for user input
+							print('Hello', person)	# Printing data
+						</code></pre>
+					</section>
+					<section>
+						<h2>Somethings to note</h2>
+						<pre><code class="python" data-trim contenteditable>
+							'''Error in addition from input.'''
+
+							x = input("Enter a number: ")
+							y = input("Enter a second number: ")
+							print('The sum of ', x, ' and ', y, ' is ', x+y, '.') #error
+						</code></pre>
+					</section>
+					<section>
+						<h2>Somethings to note</h2>
+						<pre><code class="python" data-trim contenteditable>
+							'''Conversion of strings to int before addition'''
+
+							xString = input("Enter a number: ")
+							x = int(xString)
+							yString = input("Enter a second number: ")
+							y = int(yString)
+							print('The sum of ', x, ' and ', y, ' is ', x+y, '.')
+						</code></pre>
+						<pre><code class="python" data-trim contenteditable>
+							'''Two numeric inputs, with immediate conversion'''
+
+							x = int(input("Enter a number: "))
+							y = int(input("Enter a second number: "))
+							print('The sum of ', x, ' and ', y, ' is ', x+y, '.')
+						</code></pre>
+					</section>
+					<Section>
+						<h2>Sweet</h2>
+						<p>Now we are getting somewhere</p>
+					</Section>
+				</section>
+				<section>
+					<section>
+						<h2>Arrays</h2>
+						<pre><code class="python" data-trim contenteditable>
+car1 = "Ford"
+car2 = "Volvo"
+car3 = "BMW"
+						</code></pre>
+					</section>
+					<section>
+						<h2>One-lined Goodness</h2>
+						<pre><code class="python" data-trim contenteditable>
+							cars = ["Ford", "Volvo", "BMW"]
+
+							# Retrieve each car
+							cars[0]  # returns "Ford"
+							cars[1]  # returns "Volvo"
+							cars[2]  # returns "BMW"
+						</code></pre>
+					</section>
+					<section>
+						<h2>Manipulate Arrays</h2>
+						<pre><code class="python" data-trim contenteditable>
+							cars = ["Ford", "Volvo", "BMW"]
+
+							# Finding the length of an Array
+							len(cars)
+
+							# Adding a car/cars
+							cars.append("Toyota")    # appends a Toyota to end
+							cars.extend(["Ferrari", "Aston Martin"])  # adds both
+							cars.insert(2, "Chevy")  # inserts into third array position
+
+							# removing a car
+							cars.remove[2]
+							del cars[2]
+						</code></pre>
+					</section>
+					<section>
+						<h2>Python Lists?</h2>
+						<pre><code class="python" data-trim contenteditable>
+							# Similar to an Array but can store mulitple data types
+
+							MyList = ["strings", 1, 2, True, False]
+						</code></pre>
+					</section>
+					<section>
+						<h2>Awesome Job</h2>
+						<p>Now lets make our lives easier</p>
+					</section>
+				</section>
+				<section>
+					<section>
+					<h2>Conditionals</h2>
+					<pre><code class="python" data-trim contenteditable>
+	b = True
+	if b == True:
+	  print('b is True')
+
+	# Can also be expressed
+	if b:
+	  print('b is True')
+					</code></pre>
+					</section>
+					<section>
+						<h2>Else</h2>
+						<pre><code class="python" data-trim contenteditable>
+							# Use else to ensure a response
+							b = True
+							if b:
+							    print('b is True')
+							else:
+							    print('b is False')
+						</code></pre>
+					</section>
+					<section>
+						<h2>More than Booleans</h2>
+						<pre><code class="python" data-trim contenteditable>
+							# Use Comparison Operators
+							num = 7
+							if num > 5:
+							  print('num is greater than 5')
+
+							# double equals ’==’ operator to check if one thing equals another.
+							t = 'this is text'
+							if t == 'this is text':
+							  print('the text matches')
+						</code></pre>
+					</section>
+					<section>
+						<h2>Comparison Operators</h2>
+						<pre><code class="python" data-trim contenteditable>
+								== # equal
+								!= # not equal
+								>  # greater than
+								>= # greater than or equal
+								<  # less than
+								<= # less than or equal
+						</code></pre>
+					</section>
+					<section>
+						<h2>Else-If (Elif)</h2>
+						<pre><code class="python" data-trim contenteditable>
+							num1 = 3
+							num2 = 7
+
+							if num1 > 5:
+							  print('num1 is greater than 5')
+							elif num2 > 5:
+							  print('num2 is greater than 5')
+							else:
+							  print("they're both too small!")
+						</code></pre>
+					</section>
+					<section>
+						<h2>Combining Conditionals</h2>
+						<pre><code class="python" data-trim contenteditable>
+							num1 = 3
+							num2 = 7
+
+							if num1 < 5 and num2 < 5:
+							  print("they're both too small!")
+
+							if num1 < 5 or num2 < 5:
+							  print("at least one of them is too small!")
+						</code></pre>
+					</section>
+				</section>
+				<Section>
+					<Section>
+						<h2>Loops (the begininng of automation)</h2>
+						<pre><code class="python" data-trim contenteditable>
+							# Create an Array
+							fruits = ['apples', 'oranges', 'bananas']
+
+							# Iterate over the array
+							for x in fruits:
+							  print(x)
+
+							# You can make it prettier
+							for fruit in fruits:
+							  print(fruit)
+						</code></pre>
+					</Section>
+					<Section>
+						<h2>Range</h2>
+						<pre><code class="python" data-trim contenteditable>
+							# Use a range to control a loop
+							for i in range(5):
+								print('Hello')
+						</code></pre>
+					</Section>
+					<Section>
+						<h2>How clever can you get?</h2>
+						<pre><code class="python" data-trim contenteditable>
+							# Array of Names
+							names = ["John", "Sarah", "Adam", "Crystal", "Jake", "Jim", "Bob"]
+
+							for i in range(7):
+								print('Hello', names[i])
+						</code></pre>
+					</Section>
+					<Section>
+						<h2>Even more clever</h2>
+						<pre><code class="python" data-trim contenteditable>
+							# What if the array changes?
+							names = [John, Sarah, Adam, Crystal, Jake, Jim, Bob, Jennifer, Alex]
+
+							# This loop is self adjusting ;)
+							for i in range(len(names)):
+								print('Hello', names[i])
+						</code></pre>
+					</Section>
+				</Section>
+				<section>
+					<section>
+					<h2>Giving Credit</h2>
+					<h3>Where Credit is Due</h3>
+					<p>
+						Reveal.JS
+						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
+					</p>
+				</section>
+				<section>
+					<h2>More Questions?</h2>
+					<table>
+						<thead>
+							<tr>
+								<th>Contact Info</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Email</td>
+								<td>adnan@theadnan.tech</td>
+
+							</tr>
+							<tr>
+								<td>Phone</td>
+								<td>(817)-823-8251</td>
+							</tr>
+							<tr>
+								<td>MakerName</td>
+								<td>TheSpaceMaker</td>
+							</tr>
+							<tr>
+								<td>Instagram</td>
+								<td>@SpaceMaker</td>
+							</tr>
+						</tbody>
+					</table>
+					<p>
+						<small>
+							www.theadnan.tech
+						</small>
+					</p>
+				</section>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="../reveal.js/lib/js/head.min.js"></script>
+		<script src="../reveal.js/js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: '../reveal.js/plugin/markdown/marked.js' },
+					{ src: '../reveal.js/plugin/markdown/markdown.js' },
+					{ src: '../reveal.js/plugin/notes/notes.js', async: true },
+					{ src: '../reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

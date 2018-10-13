@@ -14,6 +14,7 @@
           value="true"
           v-for="(item, i) in items"
           :key="i"
+          v-bind:to="item.to"
         >
           <v-list-tile-action>
             <v-icon v-html="item.icon"></v-icon>
@@ -28,44 +29,24 @@
       app
       :clipped-left="clipped"
     >
-      <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-      <v-btn icon @click.stop="miniVariant = !miniVariant">
-        <v-icon v-html="miniVariant ? 'fas fa-chevron-right' : 'fas fa-chevron-left'"></v-icon>
-      </v-btn>
-      <v-btn icon @click.stop="clipped = !clipped">
-        <v-icon>fas fa-globe</v-icon>
-      </v-btn>
-      <v-btn icon @click.stop="fixed = !fixed">
-        <v-icon>fas fa-minus</v-icon>
-      </v-btn>
-      <v-toolbar-title v-text="title"></v-toolbar-title>
+      <v-toolbar-side-icon outline color="primary" @click.stop="drawer = !drawer"></v-toolbar-side-icon>
+      <v-toolbar-title>Adnan's Slides</v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn icon @click.stop="rightDrawer = !rightDrawer">
-        <v-icon>fas fa-bars</v-icon>
-      </v-btn>
     </v-toolbar>
     <v-content>
       <router-view/>
     </v-content>
-    <v-navigation-drawer
-      temporary
-      :right="right"
-      v-model="rightDrawer"
-      fixed
-      app
-    >
-      <v-list>
-        <v-list-tile @click="right = !right">
-          <v-list-tile-action>
-            <v-icon>fas fa-exchange-alt</v-icon>
-          </v-list-tile-action>
-          <v-list-tile-title>Switch drawer (click me)</v-list-tile-title>
-        </v-list-tile>
-      </v-list>
-    </v-navigation-drawer>
-    <v-footer :fixed="fixed" app>
-      <span>&copy; 2017</span>
-    </v-footer>
+    <v-footer style="background-color:#351652" id="shadow" fixed>
+        <v-layout row wrap align-center>
+          <v-flex xs12>
+            <div class="white--text ml-3 text-xs-center">
+              Made with
+              <v-icon color="white">fas fa-heart</v-icon>
+              by <a class="white--text" href="theadnan.tech" target="_blank">    TheSpaceMaker</a>
+            </div>
+          </v-flex>
+        </v-layout>
+      </v-footer>
   </v-app>
 </template>
 
@@ -78,10 +59,23 @@ export default {
       clipped: false,
       drawer: true,
       fixed: false,
-      items: [{
-        icon: 'fas fa-shapes',
-        title: 'Inspire'
-      }],
+      items: [
+        {
+          icon: 'fas fa-laptop',
+          title: 'Slides',
+          to: '/'
+        },
+        {
+          icon: 'fas fa-user-astronaut',
+          title: 'About Me',
+          to: '/about'
+        },
+        {
+          icon: 'fas fa-phone',
+          title: 'Contact',
+          to: '/Contact'
+        }
+      ],
       miniVariant: false,
       right: true,
       rightDrawer: false,
